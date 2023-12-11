@@ -36,6 +36,7 @@ h2 {
   left: 0;
   width: 100%;
   background: darkred;
+  z-index: 7;
 }
 
 .nav-list {
@@ -50,6 +51,7 @@ h2 {
 
 .nav-list a:hover {
   background: gray;
+  transition: .5s;
 }
 
 .welcome-section {
@@ -62,19 +64,37 @@ h2 {
   background: linear-gradient(62deg, #3a3d40 0%, #181719 100%)
 }
 
+@media (max-width: 31.25em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .projects-section {
   text-align: center;
   background: rgb(109, 109, 254);
 }
 
+.project-title {
+  font-size: 3rem;
+  padding: 2rem;
+}
+
 .projects-header {
   margin: 0 auto 6rem auto;
-  b
+  color: white;
+  max-width: 900px;
+  border-bottom: 0.2rem solid white;
+  padding-top: 2rem;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-gap: 4rem;
   width: 100%;
   max-width: 1280px;
@@ -82,6 +102,39 @@ h2 {
   margin-bottom: 6rem;
 }
 
-.projects-section > a {
-  color: black
+img {
+  max-width: 500px;
+  height: 500px;
+  object-fit: fill;
+  border-radius: 10px;
+}
+
+.projects-grid a:hover > p{
+  color: black;
+  transform: scale(1.25);
+  transition: transform 1s;   
+} 
+
+.contact-section{
+  background: linear-gradient(62deg, #3a3d40 0%, #181719 100%)
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding-bottom: 2rem;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(-8px);
 }
