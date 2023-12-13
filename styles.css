@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 91px;
+}
+
 ul {
   list-style: none;
 }
@@ -51,7 +56,11 @@ h2 {
   left: 0;
   width: 100%;
   background: darkred;
+<<<<<<< HEAD
+  z-index: 1;
+=======
   z-index: 7;
+>>>>>>> 901de2698aa11f27c303c1d16e82c27351348192
 }
 
 .nav-list {
@@ -92,6 +101,7 @@ h2 {
 .projects-section {
   text-align: center;
   background: rgb(109, 109, 254);
+  width: 100%;
 }
 
 .project-title {
@@ -101,10 +111,17 @@ h2 {
 
 .projects-header {
   margin: 0 auto 6rem auto;
+<<<<<<< HEAD
+  color: white;
+  max-width: 900px;
+  border-bottom: 0.2rem solid white;
+  padding-top: 3rem;
+=======
   color: white;
   max-width: 900px;
   border-bottom: 0.2rem solid white;
   padding-top: 2rem;
+>>>>>>> 901de2698aa11f27c303c1d16e82c27351348192
 }
 
 .projects-grid {
